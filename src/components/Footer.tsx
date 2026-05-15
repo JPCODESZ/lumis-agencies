@@ -6,7 +6,7 @@ const footerLinks = {
     { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
     { label: "Pricing", href: "/pricing" },
-    { label: "Case Study", href: "/case-study" },
+    { label: "Sample Results", href: "/case-study" },
   ],
   Product: [
     { label: "Live Demo", href: "/demo" },
@@ -66,9 +66,16 @@ export default function Footer() {
                 Lumis<span className="text-[#0EA5E9]">.</span>
               </span>
             </Link>
-            <p className="text-[#94A3B8] text-sm leading-relaxed max-w-xs mb-6">
+            <p className="text-[#94A3B8] text-sm leading-relaxed max-w-xs mb-3">
               AI lead automation built specifically for roofing and HVAC companies. Respond faster, qualify smarter, book more jobs.
             </p>
+            <p className="text-[#475569] text-xs mb-1">Built by Jonathan Pepper</p>
+            <a
+              href="mailto:jon@lumisagencies.com"
+              className="text-[#475569] text-xs hover:text-[#94A3B8] transition-colors mb-6 block"
+            >
+              jon@lumisagencies.com
+            </a>
             <div className="flex items-center gap-3">
               {socialLinks.map(({ icon, label, href }) => (
                 <a

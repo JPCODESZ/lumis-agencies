@@ -28,10 +28,10 @@ const scenarios = {
       source: "Website Form",
       location: "Nashville, TN",
     },
-    company: "Apex Roofing",
+    company: "Skyline Roofing",
     messages: [
       { from: "lead" as const, text: "Hi, I'm interested in getting a roof inspection after last night's storm. The damage looks pretty bad.", delay: 0 },
-      { from: "ai" as const, text: "Hi Sarah! This is Mike from Apex Roofing. Thanks for reaching out. Sorry to hear about the storm damage. We specialize in helping homeowners through exactly this. Are you looking to schedule a free inspection?", delay: 1200 },
+      { from: "ai" as const, text: "Hi Sarah! This is Skyline Roofing. Thanks for reaching out. Sorry to hear about the storm damage. We specialize in helping homeowners through exactly this. Are you looking to schedule a free inspection?", delay: 1200 },
       { from: "lead" as const, text: "Yes please. A big section near the chimney looks really damaged.", delay: 2400 },
       { from: "ai" as const, text: "Got it. Chimney area damage is very common after hail storms. Quick question: is your home owner-occupied, and roughly how old is your roof?", delay: 3600 },
       { from: "lead" as const, text: "Yes I own it. The roof is about 12 years old.", delay: 4800 },
@@ -54,20 +54,20 @@ const scenarios = {
       source: "Missed Call",
       location: "Austin, TX",
     },
-    company: "Summit HVAC",
+    company: "ProAir HVAC",
     messages: [
       { from: "lead" as const, text: "My AC unit stopped working. It's 95 degrees outside and I have two young kids at home. I need help today if possible.", delay: 0 },
-      { from: "ai" as const, text: "Hi David! This is Summit HVAC. Sorry you're dealing with this, especially in this heat. We handle emergency calls and want to get you sorted today. Can I ask: is the unit completely off, or is it running but not cooling?", delay: 1200 },
+      { from: "ai" as const, text: "Hi David! This is ProAir HVAC. Sorry you're dealing with this, especially in this heat. We handle emergency calls and want to get you sorted today. Can I ask: is the unit completely off, or is it running but not cooling?", delay: 1200 },
       { from: "lead" as const, text: "It's running but just blowing hot air. Has been like this since this morning.", delay: 2400 },
       { from: "ai" as const, text: "That narrows it down. Likely a refrigerant issue or a failed capacitor, both of which our techs can diagnose and often fix same-day. Is the unit a central system, and roughly how old is it?", delay: 3600 },
       { from: "lead" as const, text: "Yes central, it's about 7 years old.", delay: 4800 },
       { from: "ai" as const, text: "Good. A 7-year-old unit is very much worth repairing. Are you the homeowner, and is there any time today you're NOT available?", delay: 6000 },
       { from: "lead" as const, text: "Yes I own it. I'm home all day, just need someone as soon as possible.", delay: 7200 },
-      { from: "ai" as const, text: "Understood. I have a technician available today between 1:00–3:00 PM. They'll call 30 minutes before arrival. Does that work?", delay: 8400 },
+      { from: "ai" as const, text: "Understood. I have a technician available today between 1:00-3:00 PM. They'll call 30 minutes before arrival. Does that work?", delay: 8400 },
       { from: "lead" as const, text: "Yes please, that would be amazing.", delay: 9600 },
-      { from: "ai" as const, text: "✅ Confirmed! A Summit HVAC technician will be at your home today, 1:00–3:00 PM. You'll get a text when they're 30 minutes out. Service call is $89, applied toward any repair. Stay cool. We've got you covered.", delay: 10800 },
+      { from: "ai" as const, text: "✅ Confirmed! A ProAir HVAC technician will be at your home today, 1:00-3:00 PM. You'll get a text when they're 30 minutes out. Service call is $89, applied toward any repair. Stay cool. We've got you covered.", delay: 10800 },
     ],
-    booked: "Today · 1:00–3:00 PM | Emergency AC Repair",
+    booked: "Today, 1:00-3:00 PM | Emergency AC Repair",
   },
 };
 
@@ -491,7 +491,7 @@ export default function DemoPage() {
               Want This Working for Your Business?
             </h2>
             <p className="text-[#94A3B8] mb-8 max-w-xl mx-auto">
-              We build and launch this exact system for roofing and HVAC companies in 5–7 business days.
+              We build and launch this exact system for roofing and HVAC companies in 5-7 business days.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <CTAButton href="/contact" variant="primary" size="lg">

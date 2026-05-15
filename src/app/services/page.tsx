@@ -35,7 +35,7 @@ const services = [
     description:
       "Automated SMS sequences nurture cold or unresponsive leads with strategically timed messages until they're ready to book or opt out.",
     benefit: "Revive leads you'd otherwise forget",
-    detail: "3–7 step sequences. Smart delays. Stops automatically when lead responds.",
+    detail: "3-7 step sequences. Smart delays. Stops automatically when lead responds.",
     color: "#F59E0B",
   },
   {
@@ -104,7 +104,7 @@ export default function ServicesPage() {
               <SectionHeading
                 badge="Our Services"
                 title="Everything You Need to Capture and Convert More Leads"
-                subtitle="Eight proven automation systems, deployed, managed, and optimized for roofing and HVAC companies."
+                subtitle="Eight automation systems built for roofing and HVAC companies, deployed, managed, and optimized."
               />
             </motion.div>
           </div>

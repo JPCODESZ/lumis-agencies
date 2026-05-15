@@ -14,7 +14,7 @@ const plans = [
     tagline: "Stop missing leads",
     setup: 497,
     monthly: 297,
-    bestFor: "Small roofing or HVAC companies (0–50 leads/month)",
+    bestFor: "Small roofing or HVAC companies (0-50 leads/month)",
     features: [
       "AI missed-call text back",
       "Website lead response (1 form)",
@@ -39,7 +39,7 @@ const plans = [
     tagline: "Full automation engine",
     setup: 997,
     monthly: 597,
-    bestFor: "Growing companies (50–200 leads/month)",
+    bestFor: "Growing companies (50-200 leads/month)",
     features: [
       "Everything in Starter",
       "Multi-channel lead response (calls + web + ads)",
@@ -227,6 +227,10 @@ export default function PricingPage() {
             </div>
           </div>
         </section>
+
+        <p className="text-center text-[#475569] text-xs mt-6 mb-2">
+          Pricing shown is current as of 2026.
+        </p>
 
         {/* Comparison Table */}
         <section className="py-16 bg-[#060B14]">

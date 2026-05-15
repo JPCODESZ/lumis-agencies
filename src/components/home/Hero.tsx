@@ -134,7 +134,7 @@ export default function Hero() {
                   <div className="w-6 h-6 rounded-full bg-[#0EA5E9] flex items-center justify-center">
                     <span className="text-white text-[9px] font-bold">AI</span>
                   </div>
-                  <span className="text-[#94A3B8] text-xs">Apex Roofing · AI Assistant</span>
+                  <span className="text-[#94A3B8] text-xs">Your Business · AI Assistant</span>
                   <span className="flex items-center gap-1 text-emerald-400 text-[10px] ml-auto">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                     Online
@@ -147,7 +147,7 @@ export default function Hero() {
                 {[
                   { from: "system", text: "New lead from website · 11:43 PM", type: "system" },
                   { from: "lead", text: "We have storm damage on our roof. Need an estimate ASAP." },
-                  { from: "ai", text: "Hi! This is Apex Roofing. Sorry to hear about the damage. We can help. Are you looking to schedule a free inspection this week?" },
+                  { from: "ai", text: "Hi! Thanks for reaching out. We can help with the damage. Are you looking to schedule a free inspection this week?" },
                   { from: "lead", text: "Yes, the sooner the better." },
                   { from: "ai", text: "✅ I have Thursday at 2 PM or Friday at 10 AM. Which works?" },
                 ].map((msg, i) => (
@@ -217,16 +217,9 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.7 }}
           className="mt-20 pt-10 border-t border-[#1E293B] text-center"
         >
-          <p className="text-sm text-[#475569] mb-5 uppercase tracking-widest font-medium">
-            Trusted by roofing and HVAC companies across North America
+          <p className="text-sm text-[#475569] font-medium">
+            Built for roofing and HVAC companies across the U.S.
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
-            {["Apex Roofing", "Summit HVAC", "ProRoof Solutions", "ClimateComfort Co.", "Eagle Contractors"].map((name) => (
-              <span key={name} className="text-[#1E293B] font-bold text-xs tracking-widest uppercase hover:text-[#374151] transition-colors">
-                {name}
-              </span>
-            ))}
-          </div>
         </motion.div>
       </div>
     </section>

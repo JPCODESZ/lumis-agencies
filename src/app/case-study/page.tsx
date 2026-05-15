@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 import CTAButton from "@/components/CTAButton";
 
 const beforeAfter = [
-  { metric: "Lead response time", before: "3–4 hours avg.", after: "Under 60 seconds", color: "#0EA5E9" },
+  { metric: "Lead response time", before: "3-4 hours avg.", after: "Under 60 seconds", color: "#0EA5E9" },
   { metric: "Lead contact rate", before: "34%", after: "81%", color: "#34D399" },
   { metric: "Monthly jobs booked", before: "38 jobs/mo", after: "61 jobs/mo", color: "#F59E0B" },
   { metric: "Missed call recovery", before: "~5%", after: "72%", color: "#A78BFA" },
@@ -19,10 +19,10 @@ const beforeAfter = [
 
 const timeline = [
   { day: "Day 1", title: "Onboarding and Discovery", desc: "We map the client's current lead sources, review their qualification criteria, and capture their brand voice and service area details." },
-  { day: "Day 2–3", title: "System Build", desc: "We configure the AI missed-call text back, website lead response, and a 5-step SMS nurture sequence using the client's actual pricing and service language." },
+  { day: "Day 2-3", title: "System Build", desc: "We configure the AI missed-call text back, website lead response, and a 5-step SMS nurture sequence using the client's actual pricing and service language." },
   { day: "Day 4", title: "Integration and Testing", desc: "We connect to the client's calendar and CRM, then run 40+ test conversations to ensure the AI handles edge cases correctly." },
   { day: "Day 5", title: "Client Review and Approval", desc: "The client reviews every message template, requests any adjustments, and gives the green light. Nothing goes live without their sign-off." },
-  { day: "Day 7", title: "Go Live", desc: "The full system launches. In early results across similar implementations, qualified leads begin converting within the first 48 hours, including jobs worth $5,000–$10,000+." },
+  { day: "Day 7", title: "Go Live", desc: "The full system launches. In early results across similar implementations, qualified leads begin converting within the first 48 hours, including jobs worth $5,000-$10,000+." },
 ];
 
 export default function CaseStudyPage() {
@@ -86,13 +86,13 @@ export default function CaseStudyPage() {
             >
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">The Situation This Solves</h2>
               <p className="text-[#94A3B8] leading-relaxed mb-6">
-                In this sample scenario, a well-established roofing company is generating 45–55 inbound leads per month from Google Ads, their website, and referrals. The owner and office manager are regularly on job sites or handling active projects. By the time someone gets back to a new lead, it is often 3–4 hours later, and sometimes the next day.
+                In this sample scenario, a well-established roofing company is generating 45-55 inbound leads per month from Google Ads, their website, and referrals. The owner and office manager are regularly on job sites or handling active projects. By the time someone gets back to a new lead, it is often 3-4 hours later, and sometimes the next day.
               </p>
               <p className="text-[#94A3B8] leading-relaxed">
                 This pattern is common across roofing and HVAC businesses of all sizes. The service quality is strong, the reputation is solid, but inbound leads are slipping through the cracks before anyone has a chance to respond.
               </p>
               <div className="mt-6 pl-5 border-l-2 border-[#EF4444]/40">
-                <p className="text-[#EF4444]/80 text-sm font-medium">Estimated monthly revenue loss from unconverted leads: $35,000–$60,000</p>
+                <p className="text-[#EF4444]/80 text-sm font-medium">Estimated monthly revenue loss from unconverted leads: $35,000-$60,000</p>
               </div>
             </motion.div>
           </div>
@@ -198,11 +198,10 @@ export default function CaseStudyPage() {
               </blockquote>
               <div className="flex items-center justify-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-[#0EA5E9]/20 flex items-center justify-center text-[#0EA5E9] font-bold">
-                  M
+                  R
                 </div>
                 <div className="text-left">
-                  <div className="text-white font-semibold text-sm">Marcus W.</div>
-                  <div className="text-[#94A3B8] text-xs">Owner, Roofing Company · Nashville, TN (representative example)</div>
+                  <div className="text-[#94A3B8] text-xs">Roofing company owner, Nashville area (representative example)</div>
                 </div>
               </div>
             </motion.div>

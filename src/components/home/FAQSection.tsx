@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: "How long does setup take?",
-    a: "Most clients are live within 5–7 business days. We handle everything: setup, integration, message customization, and testing. You approve before anything goes live.",
+    a: "Most clients are live within 5-7 business days. We handle everything: setup, integration, message customization, and testing. You approve before anything goes live.",
   },
   {
     q: "Is there a contract or long-term commitment?",

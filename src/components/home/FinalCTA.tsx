@@ -46,7 +46,7 @@ export default function FinalCTA() {
             {[
               "No obligation",
               "No setup required to talk",
-              "Results in 5–7 days",
+              "Results in 5-7 days",
             ].map((point) => (
               <div key={point} className="flex items-center gap-2">
                 <CheckCircle size={15} className="text-[#0EA5E9]" />

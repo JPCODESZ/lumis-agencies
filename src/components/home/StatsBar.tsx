@@ -6,7 +6,7 @@ const stats = [
   { value: "< 60s", label: "Average AI response time", accent: "#0EA5E9" },
   { value: "3.2x", label: "More booked appointments", accent: "#F59E0B" },
   { value: "80%+", label: "Lead contact rate", accent: "#34D399" },
-  { value: "5–7", label: "Days to go live", accent: "#A78BFA" },
+  { value: "5-7", label: "Days to go live", accent: "#A78BFA" },
 ];
 
 export default function StatsBar() {
@@ -33,6 +33,9 @@ export default function StatsBar() {
             </motion.div>
           ))}
         </div>
+        <p className="text-center text-[#475569] text-xs mt-8">
+          Example performance targets based on sample implementations
+        </p>
       </div>
     </section>
   );

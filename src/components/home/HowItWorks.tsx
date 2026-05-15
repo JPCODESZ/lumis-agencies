@@ -20,7 +20,7 @@ const steps = [
   {
     number: "03",
     icon: HelpCircle,
-    title: "AI asks 3–4 qualifying questions",
+    title: "AI asks 3-4 qualifying questions",
     body: "Ownership status, urgency, timeline, budget signals: the AI filters qualified buyers from browsers.",
   },
   {

@@ -6,38 +6,29 @@ import SectionHeading from "@/components/SectionHeading";
 
 const testimonials = [
   {
-    name: "Marcus Webb",
-    title: "Owner",
-    company: "Webb Roofing Solutions",
-    location: "Nashville, TN",
+    attribution: "Roofing owner, Nashville area",
     industry: "Roofing",
     quote:
-      "We were losing leads every single day because we couldn't respond fast enough. Now the AI texts back within a minute. We booked 11 extra jobs in our first month just from leads we would have lost. It's paid for itself 20 times over.",
-    result: "+11 jobs in month one",
+      "We were losing leads every single day because we couldn't respond fast enough. Now the AI texts back within a minute. We booked extra jobs in our first month just from leads we would have lost. It paid for itself many times over.",
+    result: "More jobs booked, month one",
     rating: 5,
     color: "#0EA5E9",
   },
   {
-    name: "Darlene Kowalski",
-    title: "Operations Manager",
-    company: "Peak Climate HVAC",
-    location: "Dallas, TX",
+    attribution: "HVAC operations manager, Dallas area",
     industry: "HVAC",
     quote:
-      "Our techs are always on jobs. Nobody was sitting at a desk answering calls. We had leads going cold for 3–4 hours. The AI system handles everything automatically now. Our contact rate went from 34% to over 80%.",
-    result: "34% → 80% contact rate",
+      "Our techs are always on jobs. Nobody was sitting at a desk answering calls. Leads were going cold for hours. The AI system handles everything automatically now. Our contact rate went way up.",
+    result: "Contact rate significantly improved",
     rating: 5,
     color: "#F59E0B",
   },
   {
-    name: "Ryan Castellano",
-    title: "CEO",
-    company: "Skyline Roofing Co.",
-    location: "Phoenix, AZ",
+    attribution: "Roofing company owner, Phoenix area",
     industry: "Roofing",
     quote:
-      "I was skeptical at first. I didn't think customers would respond to an AI. But honestly, the messages sound completely natural. We've had customers book appointments and then compliment our 'team' on being so responsive. Nobody knows it's AI.",
-    result: "87% lead response rate",
+      "I was skeptical at first. I didn't think customers would respond to an AI. But the messages sound completely natural. We've had customers book appointments and then compliment our team on being so responsive.",
+    result: "High lead response rate achieved",
     rating: 5,
     color: "#34D399",
   },
@@ -65,15 +56,15 @@ export default function Testimonials() {
         >
           <SectionHeading
             badge="Client Results"
-            title="Real Owners. Real Numbers."
-            subtitle="These aren't hypothetical results. These are actual outcomes from roofing and HVAC companies running our AI systems."
+            title="What Owners Are Saying"
+            subtitle="Feedback from roofing and HVAC companies using these automation systems."
           />
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
           {testimonials.map((t, i) => (
             <motion.div
-              key={t.name}
+              key={t.attribution}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -108,16 +99,13 @@ export default function Testimonials() {
               {/* Author */}
               <div className="flex items-center gap-3 border-t border-[#1E293B] pt-5">
                 <div
-                  className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold text-white flex-shrink-0"
+                  className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0"
                   style={{ backgroundColor: `${t.color}25`, color: t.color }}
                 >
-                  {t.name.charAt(0)}
+                  {t.industry.charAt(0)}
                 </div>
-                <div>
-                  <div className="text-white font-semibold text-sm">{t.name}</div>
-                  <div className="text-[#94A3B8] text-xs">
-                    {t.title}, {t.company} · {t.location}
-                  </div>
+                <div className="flex-1">
+                  <div className="text-[#94A3B8] text-sm">{t.attribution}</div>
                 </div>
                 <div
                   className="ml-auto text-xs font-medium px-2 py-0.5 rounded-full"
@@ -129,6 +117,9 @@ export default function Testimonials() {
             </motion.div>
           ))}
         </div>
+        <p className="text-center text-[#475569] text-xs mt-10">
+          Illustrative examples based on the types of outcomes these systems are designed to support.
+        </p>
       </div>
     </section>
   );

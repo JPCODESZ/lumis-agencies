@@ -16,7 +16,7 @@ const solutions = [
     icon: Brain,
     title: "Smart Qualification",
     body: "Asks the right questions to filter serious buyers from tire-kickers, so your team only talks to people ready to book.",
-    metric: "3–4 questions",
+    metric: "3-4 questions",
     metricLabel: "to qualify",
   },
   {

@@ -14,14 +14,14 @@ const problems = [
   },
   {
     icon: PhoneOff,
-    stat: "$5K–$15K",
-    title: "lost per missed call",
-    body: "Every unanswered call during a job could be a $5,000–$15,000 project walking away. Voicemail doesn't close deals. Fast, personal follow-up does.",
+    stat: "$5K-$15K",
+    title: "lost to a competitor per missed call",
+    body: "A missed call during peak season could mean losing a $5,000-$15,000 project to a competitor. Voicemail doesn't close deals. Fast follow-up does.",
     color: "#EF4444",
   },
   {
     icon: BatteryLow,
-    stat: "3–4 hrs",
+    stat: "3-4 hrs",
     title: "wasted per day on manual follow-up",
     body: "Your team is busy on jobs, not glued to a phone waiting for leads. Manual follow-up is inconsistent, exhausting, and doesn't scale.",
     color: "#A78BFA",

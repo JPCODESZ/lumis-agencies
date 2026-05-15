@@ -91,7 +91,7 @@ export default function ContactPage() {
     { icon: Search, label: "We review your process", desc: "We learn how you currently handle leads" },
     { icon: Wrench, label: "We build your plan", desc: "Custom automation blueprint for your business" },
     { icon: CheckCircle, label: "You approve the setup", desc: "Nothing goes live without your sign-off" },
-    { icon: Zap, label: "Go live in 5–7 days", desc: "Full system running in less than a week" },
+    { icon: Zap, label: "Go live in 5-7 days", desc: "Full system running in less than a week" },
   ];
 
   return (
@@ -187,8 +187,8 @@ export default function ContactPage() {
                         >
                           <option value="" disabled>How many leads per month?</option>
                           <option value="under-25">Under 25</option>
-                          <option value="25-50">25–50</option>
-                          <option value="50-100">50–100</option>
+                          <option value="25-50">25-50</option>
+                          <option value="50-100">50-100</option>
                           <option value="100+">100+</option>
                           <option value="unknown">I don&apos;t know</option>
                         </select>
@@ -298,11 +298,32 @@ export default function ContactPage() {
                   </div>
                 </motion.div>
 
-                {/* Trust badge */}
+                {/* Founder trust */}
                 <motion.div
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.4 }}
+                  className="bg-[#111827] border border-[#1E293B] rounded-2xl p-6"
+                >
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-full bg-[#0EA5E9]/10 flex items-center justify-center text-[#0EA5E9] font-bold text-sm flex-shrink-0">
+                      JP
+                    </div>
+                    <div>
+                      <div className="text-white font-semibold text-sm">Jonathan Pepper</div>
+                      <div className="text-[#94A3B8] text-xs">Founder, Lumis Agencies</div>
+                    </div>
+                  </div>
+                  <p className="text-[#94A3B8] text-sm leading-relaxed">
+                    You&apos;ll be speaking directly with me on the audit call.
+                  </p>
+                </motion.div>
+
+                {/* Trust badge */}
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.5 }}
                   className="bg-[#0EA5E9]/5 border border-[#0EA5E9]/20 rounded-2xl p-6 text-center"
                 >
                   <div className="text-3xl font-bold text-[#0EA5E9] mb-1">30-Day</div>
