@@ -1,36 +1,36 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Clock, PhoneOff, BatteryLow } from "lucide-react";
+import { TrendingDown, Users, Clock } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 
 const problems = [
   {
-    icon: Clock,
-    stat: "78%",
-    title: "of leads go to the first company that responds",
-    body: "Most roofing companies respond in hours. Your competitor responds in minutes. Speed isn't a nice-to-have. It's the difference between winning and losing the job.",
+    icon: TrendingDown,
+    stat: "73%",
+    title: "of service businesses have no consistent outbound system",
+    body: "Most rely on referrals and word of mouth. When referrals slow down, revenue drops. Without a system generating new leads every week, growth becomes unpredictable.",
     color: "#F59E0B",
   },
   {
-    icon: PhoneOff,
-    stat: "$5K-$15K",
-    title: "lost to a competitor per missed call",
-    body: "A missed call during peak season could mean losing a $5,000-$15,000 project to a competitor. Voicemail doesn't close deals. Fast follow-up does.",
+    icon: Users,
+    stat: "1,000s",
+    title: "of qualified local businesses never hear from you",
+    body: "There are thousands of companies in your target market actively looking for what you offer. Without a targeted outbound system, you never reach them before a competitor does.",
     color: "#EF4444",
   },
   {
-    icon: BatteryLow,
-    stat: "3-4 hrs",
-    title: "wasted per day on manual follow-up",
-    body: "Your team is busy on jobs, not glued to a phone waiting for leads. Manual follow-up is inconsistent, exhausting, and doesn't scale.",
+    icon: Clock,
+    stat: "10+ hrs",
+    title: "wasted per week on manual prospecting with no system",
+    body: "Cold calling lists, searching LinkedIn, writing one-off emails. Manual prospecting is inconsistent, exhausting, and impossible to scale. A system replaces the chaos.",
     color: "#A78BFA",
   },
 ];
 
 export default function ProblemSection() {
   return (
-    <section className="py-24 bg-[#060B14]">
+    <section className="py-24 bg-[#040810]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -40,8 +40,8 @@ export default function ProblemSection() {
         >
           <SectionHeading
             badge="The Problem"
-            title="The Lead Response Problem Is Costing You Jobs"
-            subtitle="It's not your service quality. It's not your pricing. The biggest growth bottleneck for most roofing and HVAC companies is response speed."
+            title="No System Means No Predictable Growth"
+            subtitle="It is not your service quality. It is not your pricing. The biggest growth bottleneck for most service businesses is not having a reliable way to find and reach new leads."
           />
         </motion.div>
 
@@ -53,9 +53,8 @@ export default function ProblemSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="relative group bg-[#111827] border border-[#1E293B] rounded-2xl p-8 hover:border-[#1E293B] overflow-hidden"
+              className="relative group bg-[#0A0F1E] border border-[#1E293B] rounded-2xl p-8 overflow-hidden"
             >
-              {/* Glow on hover */}
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
                 style={{

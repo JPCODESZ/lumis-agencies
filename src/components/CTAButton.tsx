@@ -36,11 +36,11 @@ export default function CTAButton({
 
   const variants = {
     primary:
-      "bg-[#0EA5E9] text-white hover:bg-[#0284C7] shadow-lg shadow-[#0EA5E9]/25",
+      "bg-[#22C55E] text-white hover:bg-[#16A34A] shadow-lg shadow-[#22C55E]/25",
     secondary:
-      "bg-[#F59E0B] text-[#0A0F1E] hover:bg-[#D97706] shadow-lg shadow-[#F59E0B]/25",
+      "bg-[#F59E0B] text-[#040810] hover:bg-[#D97706] shadow-lg shadow-[#F59E0B]/25",
     outline:
-      "border border-[#1E293B] text-[#F1F5F9] hover:border-[#0EA5E9] hover:text-[#0EA5E9] bg-transparent",
+      "border border-[#1E293B] text-[#F1F5F9] hover:border-[#22C55E] hover:text-[#22C55E] bg-transparent",
   };
 
   const classes = cn(

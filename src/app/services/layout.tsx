@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Services | Lumis Agencies",
   description:
-    "Eight AI automation systems built for roofing and HVAC companies. From instant lead response to appointment booking and review automation, deployed in 5-7 days.",
+    "Eight AI outbound systems for service businesses. Lead list building, enrichment, cold email, follow-up automation, CRM pipeline, booking workflows, and reporting.",
 };
 
 export default function ServicesLayout({ children }: { children: React.ReactNode }) {

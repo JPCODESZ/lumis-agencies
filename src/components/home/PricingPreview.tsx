@@ -11,8 +11,8 @@ const plans = [
     setup: "$497",
     monthly: "$297",
     period: "/mo",
-    description: "For small teams ready to stop missing leads",
-    features: ["AI missed-call text back", "Website lead response", "Instant SMS follow-up", "Basic qualification"],
+    description: "For businesses ready to start generating outbound leads",
+    features: ["Basic lead list build", "Outreach system setup", "Simple follow-up sequence", "CRM tracking"],
     popular: false,
   },
   {
@@ -20,8 +20,8 @@ const plans = [
     setup: "$997",
     monthly: "$597",
     period: "/mo",
-    description: "For growing companies that want full automation",
-    features: ["Everything in Starter", "Appointment booking automation", "CRM pipeline integration", "Review automation"],
+    description: "For businesses that want a full AI-powered outbound engine",
+    features: ["Larger targeted lead lists", "AI personalization per lead", "Multi-step follow-up", "Weekly optimization", "Booking workflow"],
     popular: true,
   },
   {
@@ -29,8 +29,8 @@ const plans = [
     setup: "Custom",
     monthly: "Custom",
     period: "",
-    description: "For multi-location or high-volume operations",
-    features: ["Everything in Growth", "Old lead reactivation", "Custom AI workflows", "Dedicated account manager"],
+    description: "For multi-market or high-volume outbound campaigns",
+    features: ["Multi-domain outbound", "Advanced enrichment", "Reporting dashboard", "CRM integrations", "Scaled campaigns"],
     popular: false,
   },
 ];
@@ -48,7 +48,7 @@ export default function PricingPreview() {
           <SectionHeading
             badge="Pricing"
             title="Simple, Transparent Pricing"
-            subtitle="One-time setup + a flat monthly fee. No hidden charges, no long-term contracts."
+            subtitle="One-time setup plus a flat monthly fee. No hidden charges, no long-term contracts."
           />
         </motion.div>
 
@@ -62,12 +62,12 @@ export default function PricingPreview() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className={`relative rounded-2xl p-8 border ${
                 plan.popular
-                  ? "bg-gradient-to-b from-[#0EA5E9]/10 to-[#111827] border-[#0EA5E9]/40"
-                  : "bg-[#111827] border-[#1E293B]"
+                  ? "bg-gradient-to-b from-[#22C55E]/10 to-[#0A0F1E] border-[#22C55E]/40"
+                  : "bg-[#040810] border-[#1E293B]"
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#0EA5E9] text-white text-xs font-bold px-4 py-1 rounded-full">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#22C55E] text-white text-xs font-bold px-4 py-1 rounded-full">
                   Most Popular
                 </div>
               )}
@@ -87,7 +87,7 @@ export default function PricingPreview() {
               <ul className="space-y-2.5 mb-8">
                 {plan.features.map((f) => (
                   <li key={f} className="flex items-center gap-2.5">
-                    <CheckCircle size={14} className="text-[#0EA5E9] flex-shrink-0" />
+                    <CheckCircle size={14} className="text-[#22C55E] flex-shrink-0" />
                     <span className="text-[#CBD5E1] text-sm">{f}</span>
                   </li>
                 ))}

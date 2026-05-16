@@ -7,28 +7,28 @@ import SectionHeading from "@/components/SectionHeading";
 
 const faqs = [
   {
-    q: "How quickly does the AI respond to a lead?",
-    a: "Within 60 seconds, 24/7/365, including nights, weekends, and holidays. The AI never sleeps, never takes a lunch break, and never misses a notification.",
+    q: "How do you find the leads?",
+    a: "We use a combination of AI-powered databases, niche research tools, and enrichment platforms to build a targeted list of businesses that match your ideal client profile. Every lead is filtered by industry, location, company size, and fit before it enters your system.",
   },
   {
-    q: "Will it sound robotic to my customers?",
-    a: "No. We spend time during onboarding learning your brand voice and customizing the AI's messaging to match. Most clients' customers assume they're texting with a real team member.",
+    q: "How is the outreach personalized?",
+    a: "AI analyzes each company's profile and generates a custom first-touch email that references their specific business. It does not use generic templates. Every message is written to feel like a hand-crafted outreach, not a mass email blast.",
+  },
+  {
+    q: "How long until I see results?",
+    a: "Most clients get their system live within 7 business days. First replies typically come in within the first 2 weeks of outreach. Booked calls usually follow within 2 to 4 weeks depending on your niche and offer.",
+  },
+  {
+    q: "What industries do you work with?",
+    a: "We specialize in service businesses including roofing, HVAC, landscaping, detailing, med spas, contractors, and other local high-ticket service companies. If you have a defined niche and a strong offer, the system can work for you.",
   },
   {
     q: "Do I need to change my current software?",
-    a: "Usually not. We integrate with most popular CRMs and scheduling tools (ServiceTitan, Jobber, HouseCall Pro, Google Calendar, etc.). Our team handles the setup for you.",
-  },
-  {
-    q: "What if a customer asks something complex or unusual?",
-    a: "The AI handles the most common questions automatically. For anything outside its scope, it flags the conversation and notifies your team so no one gets left hanging.",
-  },
-  {
-    q: "How long does setup take?",
-    a: "Most clients are live within 5-7 business days. We handle everything: setup, integration, message customization, and testing. You approve before anything goes live.",
+    a: "Usually not. We integrate with most popular CRMs and scheduling tools including GoHighLevel, HubSpot, Calendly, and Google Calendar. We handle all the integration and setup for you.",
   },
   {
     q: "Is there a contract or long-term commitment?",
-    a: "No long-term contracts. After the one-time setup fee, it's month-to-month. Cancel any time. Most clients stick around because the ROI is clear.",
+    a: "No long-term contracts. After the one-time setup fee it is month-to-month. Cancel any time. Most clients stay because the pipeline speaks for itself.",
   },
 ];
 
@@ -39,7 +39,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
     <div className="border border-[#1E293B] rounded-xl overflow-hidden">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between gap-4 p-6 text-left hover:bg-[#111827]/50 transition-colors duration-200"
+        className="w-full flex items-center justify-between gap-4 p-6 text-left hover:bg-[#0A0F1E]/50 transition-colors duration-200"
       >
         <span className="text-white font-medium text-sm sm:text-base">{q}</span>
         <motion.div
@@ -70,7 +70,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 
 export default function FAQSection() {
   return (
-    <section className="py-24 bg-[#060B14]">
+    <section className="py-24 bg-[#040810]">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

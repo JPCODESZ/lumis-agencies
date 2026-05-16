@@ -1,37 +1,37 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Zap, Brain, CalendarCheck, LayoutDashboard } from "lucide-react";
+import { Database, Mail, MessageSquare, LayoutDashboard } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 
 const solutions = [
   {
-    icon: Zap,
-    title: "Instant Response",
-    body: "AI contacts every new lead within 60 seconds via SMS, any time of day or night, even when your team is on a job.",
-    metric: "< 60 sec",
-    metricLabel: "average response",
+    icon: Database,
+    title: "Lead List Building",
+    body: "AI researches your niche and builds a targeted list of qualified local businesses, including company name, size, location, and fit score.",
+    metric: "500+",
+    metricLabel: "leads per campaign",
   },
   {
-    icon: Brain,
-    title: "Smart Qualification",
-    body: "Asks the right questions to filter serious buyers from tire-kickers, so your team only talks to people ready to book.",
-    metric: "3-4 questions",
-    metricLabel: "to qualify",
+    icon: Mail,
+    title: "Lead Enrichment",
+    body: "Every lead gets enriched with decision-maker name, verified email, and business context so outreach lands in the right inbox with the right message.",
+    metric: "98%",
+    metricLabel: "delivery accuracy",
   },
   {
-    icon: CalendarCheck,
-    title: "Auto Booking",
-    body: "Qualified leads get a booking link or direct calendar slot. No phone tag, no back-and-forth, no manual work.",
-    metric: "24/7",
-    metricLabel: "booking available",
+    icon: MessageSquare,
+    title: "Personalized Outreach",
+    body: "AI writes custom icebreakers for each prospect based on their business. No generic templates. Every email reads like it was written by hand.",
+    metric: "3-5x",
+    metricLabel: "higher reply rate",
   },
   {
     icon: LayoutDashboard,
-    title: "Pipeline Management",
-    body: "Every lead, note, and follow-up task is automatically tracked so nothing slips through the cracks.",
-    metric: "0 missed",
-    metricLabel: "follow-ups",
+    title: "Pipeline Automation",
+    body: "Replies get tracked, qualified leads get booked, and every touchpoint is logged in your CRM. Nothing slips. No manual follow-up required.",
+    metric: "Zero",
+    metricLabel: "leads lost to follow-up",
   },
 ];
 
@@ -47,8 +47,8 @@ export default function SolutionSection() {
         >
           <SectionHeading
             badge="The Solution"
-            title="AI That Works 24/7 So Your Team Doesn't Have To"
-            subtitle="We build and manage a complete AI lead automation system for your roofing or HVAC company, from first contact to booked appointment."
+            title="AI That Finds, Reaches, and Books Leads For You"
+            subtitle="We build and manage a complete AI outbound growth system for your service business, from lead research to qualified calls on your calendar."
           />
         </motion.div>
 
@@ -61,17 +61,20 @@ export default function SolutionSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               whileHover={{ y: -4 }}
-              className="bg-[#111827] border border-[#1E293B] rounded-2xl p-6 hover:border-[#0EA5E9]/30 transition-colors duration-300"
+              className="bg-[#0A0F1E] border border-[#1E293B] rounded-2xl p-6 hover:border-[#22C55E]/30 transition-colors duration-300"
             >
-              <div className="w-10 h-10 rounded-xl bg-[#0EA5E9]/10 flex items-center justify-center mb-5">
-                <item.icon size={20} className="text-[#0EA5E9]" />
+              <div className="w-10 h-10 rounded-xl bg-[#22C55E]/10 flex items-center justify-center mb-5">
+                <item.icon size={20} className="text-[#22C55E]" />
               </div>
 
               <h3 className="text-white font-semibold text-lg mb-2">{item.title}</h3>
               <p className="text-[#94A3B8] text-sm leading-relaxed mb-6">{item.body}</p>
 
               <div className="border-t border-[#1E293B] pt-4">
-                <div className="text-[#0EA5E9] font-bold text-xl">{item.metric}</div>
+                <div className="flex items-center gap-2">
+                  <div className="text-[#22C55E] font-bold text-xl">{item.metric}</div>
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#22C55E] animate-pulse" />
+                </div>
                 <div className="text-[#94A3B8] text-xs">{item.metricLabel}</div>
               </div>
             </motion.div>

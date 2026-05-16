@@ -14,10 +14,10 @@ const footerLinks = {
     { label: "Book Free Audit", href: "/contact" },
   ],
   Services: [
-    { label: "AI Missed-Call Text Back", href: "/services" },
-    { label: "Lead Qualification", href: "/services" },
-    { label: "Appointment Booking", href: "/services" },
-    { label: "Review Automation", href: "/services" },
+    { label: "AI Lead List Building", href: "/services" },
+    { label: "Lead Enrichment", href: "/services" },
+    { label: "Cold Email Systems", href: "/services" },
+    { label: "CRM Pipeline Automation", href: "/services" },
   ],
 };
 
@@ -53,21 +53,20 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#060B14] border-t border-[#1E293B]">
+    <footer className="bg-[#040810] border-t border-[#1E293B]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
-          {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-[#0EA5E9] flex items-center justify-center shadow-lg shadow-[#0EA5E9]/30">
+              <div className="w-8 h-8 rounded-lg bg-[#22C55E] flex items-center justify-center shadow-lg shadow-[#22C55E]/30">
                 <Zap size={16} className="text-white" fill="white" />
               </div>
               <span className="text-xl font-bold text-white tracking-tight">
-                Lumis<span className="text-[#0EA5E9]">.</span>
+                Lumis<span className="text-[#22C55E]">.</span>
               </span>
             </Link>
             <p className="text-[#94A3B8] text-sm leading-relaxed max-w-xs mb-3">
-              AI lead automation built specifically for roofing and HVAC companies. Respond faster, qualify smarter, book more jobs.
+              AI-powered outbound systems for service businesses. We find the leads, enrich the data, send the outreach, and book the calls.
             </p>
             <p className="text-[#475569] text-xs mb-1">Built by Jonathan Pepper</p>
             <a
@@ -82,7 +81,7 @@ export default function Footer() {
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="w-9 h-9 rounded-lg bg-[#111827] border border-[#1E293B] flex items-center justify-center text-[#94A3B8] hover:text-[#0EA5E9] hover:border-[#0EA5E9] transition-colors duration-200"
+                  className="w-9 h-9 rounded-lg bg-[#0A0F1E] border border-[#1E293B] flex items-center justify-center text-[#94A3B8] hover:text-[#22C55E] hover:border-[#22C55E] transition-colors duration-200"
                 >
                   {icon}
                 </a>
@@ -90,7 +89,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Links */}
           {Object.entries(footerLinks).map(([group, links]) => (
             <div key={group}>
               <h4 className="text-white font-semibold text-sm mb-4">{group}</h4>
@@ -110,10 +108,9 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Bottom */}
         <div className="border-t border-[#1E293B] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-[#94A3B8] text-sm">
-            © {new Date().getFullYear()} Lumis Agencies. All rights reserved.
+            &copy; {new Date().getFullYear()} Lumis Agencies. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-[#94A3B8] text-sm hover:text-white transition-colors">Privacy Policy</a>

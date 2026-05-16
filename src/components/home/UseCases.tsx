@@ -1,40 +1,58 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Home, Thermometer, CheckCircle } from "lucide-react";
+import { Home, Thermometer, Flower2, Car, Sparkles, Wrench, Building2, MapPin, CheckCircle } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import CTAButton from "@/components/CTAButton";
 
-const useCases = [
+const niches = [
   {
     icon: Home,
-    industry: "Roofing Companies",
-    description:
-      "Turn storm season chaos into booked estimates. Every lead (from hail damage calls to insurance claim inquiries) gets an instant response and professional follow-up.",
-    points: [
-      "Storm damage assessment requests",
-      "Free estimate form fills",
-      "Insurance claim follow-up",
-      "Seasonal campaign responses",
-      "Referral lead nurturing",
-    ],
-    color: "#0EA5E9",
-    badge: "For Roofers",
+    label: "Roofing",
+    color: "#22C55E",
+    points: ["Storm damage leads", "Commercial roofing B2B", "Contractor referrals"],
   },
   {
     icon: Thermometer,
-    industry: "HVAC Companies",
-    description:
-      "Never miss an emergency call again. AI handles after-hours urgent requests, seasonal maintenance campaigns, and new install inquiries, 24/7.",
-    points: [
-      "Emergency repair requests (nights & weekends)",
-      "Seasonal maintenance reminders",
-      "New system installation inquiries",
-      "Tune-up campaign follow-up",
-      "Service contract renewals",
-    ],
+    label: "HVAC",
+    color: "#4ADE80",
+    points: ["Residential installs", "Commercial service contracts", "Maintenance upsells"],
+  },
+  {
+    icon: Flower2,
+    label: "Landscaping",
     color: "#F59E0B",
-    badge: "For HVAC",
+    points: ["HOA accounts", "Commercial property leads", "Seasonal contract outreach"],
+  },
+  {
+    icon: Car,
+    label: "Detailing",
+    color: "#22C55E",
+    points: ["Fleet clients", "Dealership partnerships", "High-end vehicle owners"],
+  },
+  {
+    icon: Sparkles,
+    label: "Med Spas",
+    color: "#A78BFA",
+    points: ["Referral partnerships", "B2B wellness programs", "Corporate client outreach"],
+  },
+  {
+    icon: Wrench,
+    label: "Contractors",
+    color: "#F59E0B",
+    points: ["GC partnership outreach", "Commercial bidding leads", "Subcontractor networks"],
+  },
+  {
+    icon: Building2,
+    label: "Home Services",
+    color: "#4ADE80",
+    points: ["Property manager leads", "Multi-unit accounts", "Recurring service contracts"],
+  },
+  {
+    icon: MapPin,
+    label: "Local Services",
+    color: "#22C55E",
+    points: ["Hyper-local targeting", "Community business leads", "Niche vertical outreach"],
   },
 ];
 
@@ -49,59 +67,44 @@ export default function UseCases() {
           transition={{ duration: 0.5 }}
         >
           <SectionHeading
-            badge="Built For Your Industry"
-            title="Automation Designed for Roofing and HVAC"
-            subtitle="We don't offer a generic chatbot. We build workflows specifically for how your business gets and converts leads."
+            badge="Who We Serve"
+            title="Outbound Systems Built for Your Industry"
+            subtitle="We build niche-specific outbound systems. The targeting, messaging, and sequences are custom to your market and your offer."
           />
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-16">
-          {useCases.map((uc, i) => (
-            <motion.div
-              key={uc.industry}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="bg-[#111827] border border-[#1E293B] rounded-2xl p-8 hover:border-opacity-50 transition-all duration-300"
-              style={{ ["--hover-color" as string]: uc.color }}
-            >
-              <div className="flex items-start gap-4 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-16">
+          {niches.map((niche, i) => {
+            const Icon = niche.icon;
+            return (
+              <motion.div
+                key={niche.label}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.06 }}
+                whileHover={{ y: -4 }}
+                className="bg-[#040810] border border-[#1E293B] rounded-2xl p-6 hover:border-opacity-60 transition-all duration-300 group"
+                style={{ "--hover-border": niche.color } as React.CSSProperties}
+              >
                 <div
-                  className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ backgroundColor: `${uc.color}15` }}
+                  className="w-10 h-10 rounded-xl flex items-center justify-center mb-4"
+                  style={{ backgroundColor: `${niche.color}15` }}
                 >
-                  <uc.icon size={22} style={{ color: uc.color }} />
+                  <Icon size={18} style={{ color: niche.color }} />
                 </div>
-                <div>
-                  <span
-                    className="text-xs font-semibold uppercase tracking-widest px-2 py-0.5 rounded-full border mb-2 inline-block"
-                    style={{
-                      color: uc.color,
-                      backgroundColor: `${uc.color}10`,
-                      borderColor: `${uc.color}30`,
-                    }}
-                  >
-                    {uc.badge}
-                  </span>
-                  <h3 className="text-white font-bold text-xl">{uc.industry}</h3>
-                </div>
-              </div>
-
-              <p className="text-[#94A3B8] text-sm leading-relaxed mb-6">
-                {uc.description}
-              </p>
-
-              <ul className="space-y-3">
-                {uc.points.map((point) => (
-                  <li key={point} className="flex items-center gap-3">
-                    <CheckCircle size={15} style={{ color: uc.color }} className="flex-shrink-0" />
-                    <span className="text-[#CBD5E1] text-sm">{point}</span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          ))}
+                <h3 className="text-white font-bold text-base mb-3">{niche.label}</h3>
+                <ul className="space-y-2">
+                  {niche.points.map((point) => (
+                    <li key={point} className="flex items-start gap-2">
+                      <CheckCircle size={12} style={{ color: niche.color }} className="flex-shrink-0 mt-0.5" />
+                      <span className="text-[#94A3B8] text-xs">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            );
+          })}
         </div>
 
         <motion.div

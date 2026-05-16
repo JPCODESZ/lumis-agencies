@@ -9,10 +9,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Lumis Agencies | AI Lead Automation for Roofing & HVAC",
+  title: "Lumis Agencies | AI Outbound Growth Systems for Service Businesses",
   description:
-    "We help roofing and HVAC companies respond instantly to leads, qualify customers, and book more jobs with AI automation.",
-  keywords: "AI automation, lead response, roofing, HVAC, appointment booking",
+    "We build done-for-you AI outbound systems that find targeted business leads, enrich decision-maker data, send personalized outreach, and book qualified calls for service businesses.",
+  keywords: "AI outbound, lead generation, cold email, lead enrichment, service business, roofing, HVAC, landscaping",
 };
 
 export default function RootLayout({

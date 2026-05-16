@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import {
-  PhoneMissed, Globe, MessageSquare, Filter, Calendar,
-  LayoutDashboard, Star, RefreshCw, ArrowRight
+  Database, Search, Mail, RefreshCw, LayoutDashboard,
+  Calendar, BarChart2, Zap, ArrowRight
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -12,76 +12,76 @@ import CTAButton from "@/components/CTAButton";
 
 const services = [
   {
-    icon: PhoneMissed,
-    title: "AI Missed-Call Text Back",
+    icon: Search,
+    title: "AI Lead List Building",
     description:
-      "When a customer calls and you can't answer, the AI sends a personalized text within 30 seconds, keeping the conversation alive before they call a competitor.",
-    benefit: "Never lose a lead to voicemail again",
-    detail: "Works on your main business line. Customizable message. Triggers on every missed call, 24/7.",
-    color: "#0EA5E9",
+      "We research your exact niche and build a targeted database of qualified local businesses. Every lead is filtered by industry, location, company size, and fit score before entering your system.",
+    benefit: "500+ targeted leads per campaign",
+    detail: "Custom ICP research. Niche-specific databases. Location and size filtering. Updated weekly.",
+    color: "#22C55E",
   },
   {
-    icon: Globe,
-    title: "Website Lead Response",
+    icon: Database,
+    title: "Lead Enrichment",
     description:
-      "Every form submission triggers an instant AI follow-up sequence, engaging leads before they've had time to check another company.",
-    benefit: "3x higher contact rates on web leads",
-    detail: "Integrates with any web form. Fires within 60 seconds. Works with your existing website.",
-    color: "#38BDF8",
+      "Every company in your list gets matched to the right decision-maker. We pull verified owner or manager emails, LinkedIn profiles, and business context so outreach lands in the right inbox.",
+    benefit: "Verified decision-maker contact data",
+    detail: "Owner and manager identification. Email verification. Business context attached. CRM-ready format.",
+    color: "#4ADE80",
   },
   {
-    icon: MessageSquare,
-    title: "Instant SMS Follow-Up",
+    icon: Mail,
+    title: "Personalized Cold Email Systems",
     description:
-      "Automated SMS sequences nurture cold or unresponsive leads with strategically timed messages until they're ready to book or opt out.",
-    benefit: "Revive leads you'd otherwise forget",
-    detail: "3-7 step sequences. Smart delays. Stops automatically when lead responds.",
+      "AI writes a custom icebreaker for each prospect based on their specific business. No generic templates. Every email reads like it was written by hand and sent one at a time.",
+    benefit: "3-5x higher reply rate vs generic outreach",
+    detail: "Business-specific icebreakers. Multi-step sequences. Smart send scheduling. Deliverability optimized.",
     color: "#F59E0B",
   },
   {
-    icon: Filter,
-    title: "Lead Qualification",
+    icon: RefreshCw,
+    title: "Automated Follow-Up",
     description:
-      "AI asks targeted questions to separate serious buyers from window shoppers, saving your team hours of back-and-forth with unqualified prospects.",
-    benefit: "Only talk to ready-to-buy prospects",
-    detail: "Custom qualification criteria. Scores leads by urgency and fit. Flags hot leads instantly.",
+      "Prospects who do not reply on the first email get a smart follow-up sequence that runs automatically. Follow-up stops the moment a lead responds, so nothing ever feels spammy.",
+    benefit: "2-3x more replies from follow-up alone",
+    detail: "3 to 7 step sequences. Smart delays. Auto-stops on reply. Tone varies per step.",
     color: "#A78BFA",
-  },
-  {
-    icon: Calendar,
-    title: "Appointment Booking",
-    description:
-      "Qualified leads get a booking link or direct calendar slot. No phone tag, no scheduling back-and-forth, no manual work required.",
-    benefit: "Fill your calendar on autopilot",
-    detail: "Integrates with Google Calendar, ServiceTitan, Jobber, HouseCall Pro. Sends confirmation texts.",
-    color: "#34D399",
   },
   {
     icon: LayoutDashboard,
     title: "CRM Pipeline Automation",
     description:
-      "Every lead, conversation note, and follow-up task is automatically logged and tracked in your pipeline so nothing slips through the cracks.",
-    benefit: "Nothing falls through the cracks",
-    detail: "Works with GoHighLevel, HubSpot, or a custom pipeline. Auto-updates stages. Assigns tasks.",
+      "Every lead, reply, and outcome is automatically logged and tracked in your pipeline. Stages update in real time so your team always knows where each prospect stands without doing manual data entry.",
+    benefit: "Zero leads lost to manual tracking gaps",
+    detail: "Works with GoHighLevel, HubSpot, and custom pipelines. Auto-updates stages. Assigns tasks.",
     color: "#FB923C",
   },
   {
-    icon: Star,
-    title: "Review Request Automation",
+    icon: Zap,
+    title: "Lead Reactivation",
     description:
-      "After a completed job, AI sends a personalized review request at the perfect moment: when satisfaction is highest and the job is fresh.",
-    benefit: "More 5-star Google reviews, less effort",
-    detail: "Timed to job completion. Links directly to your Google Business profile. Tracks response rate.",
-    color: "#FBBF24",
+      "We run targeted AI outreach campaigns on your cold or dormant leads with messaging designed to bring them back. This turns contacts you already paid for into pipeline revenue.",
+    benefit: "Revenue from leads you already own",
+    detail: "Works on leads 30 days to 2 years old. Custom messaging by lead source. Full reporting included.",
+    color: "#F472B6",
   },
   {
-    icon: RefreshCw,
-    title: "Old Lead Reactivation",
+    icon: Calendar,
+    title: "Booking Workflow Setup",
     description:
-      "We run targeted campaigns on your dormant leads with AI-crafted messages designed to bring cold prospects back to life. Revenue from leads you already paid for.",
-    benefit: "Generate revenue from your existing lead list",
-    detail: "Works on leads 30 days to 2 years old. Custom messaging by lead source. Full reporting.",
-    color: "#F472B6",
+      "Qualified leads get routed directly to a booking flow so interested prospects can get on your calendar without back-and-forth. No phone tag, no manual scheduling, no delays.",
+    benefit: "Fill your calendar with qualified calls",
+    detail: "Integrates with Calendly, Google Calendar, and GoHighLevel. Sends confirmation and reminders.",
+    color: "#34D399",
+  },
+  {
+    icon: BarChart2,
+    title: "Reporting and Optimization",
+    description:
+      "We track every key metric across your outbound system including open rates, reply rates, booked calls, and pipeline value. We review and optimize weekly to keep performance improving.",
+    benefit: "Clear data, continuous improvement",
+    detail: "Weekly reporting dashboard. Reply analysis. A/B testing on subject lines. Strategy calls included.",
+    color: "#22C55E",
   },
 ];
 
@@ -90,10 +90,9 @@ export default function ServicesPage() {
     <>
       <Navbar />
       <main className="pt-20">
-        {/* Hero */}
-        <section className="py-24 bg-[#0A0F1E] relative overflow-hidden">
+        <section className="py-24 bg-[#040810] relative overflow-hidden">
           <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[#0EA5E9]/6 rounded-full blur-[100px]" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[#22C55E]/6 rounded-full blur-[100px]" />
           </div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <motion.div
@@ -103,15 +102,14 @@ export default function ServicesPage() {
             >
               <SectionHeading
                 badge="Our Services"
-                title="Everything You Need to Capture and Convert More Leads"
-                subtitle="Eight automation systems built for roofing and HVAC companies, deployed, managed, and optimized."
+                title="Everything You Need to Generate and Convert Outbound Leads"
+                subtitle="Eight systems built for service businesses, deployed, managed, and optimized by our team."
               />
             </motion.div>
           </div>
         </section>
 
-        {/* Services Grid */}
-        <section className="py-16 bg-[#060B14]">
+        <section className="py-16 bg-[#0A0F1E]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {services.map((svc, i) => (
@@ -121,7 +119,7 @@ export default function ServicesPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: (i % 2) * 0.1 }}
-                  className="bg-[#111827] border border-[#1E293B] rounded-2xl p-8 hover:border-opacity-60 transition-all duration-300 group"
+                  className="bg-[#040810] border border-[#1E293B] rounded-2xl p-8 transition-all duration-300 group"
                 >
                   <div className="flex items-start gap-5">
                     <div
@@ -151,8 +149,7 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="py-24 bg-[#0A0F1E] text-center">
+        <section className="py-24 bg-[#040810] text-center">
           <div className="max-w-2xl mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -164,10 +161,10 @@ export default function ServicesPage() {
                 Ready to Put These Systems to Work?
               </h2>
               <p className="text-[#94A3B8] mb-8">
-                Book a free audit and we'll show you which services will have the biggest impact on your business.
+                Book a free outbound audit and we will show you which services will have the biggest impact on your business.
               </p>
               <CTAButton href="/contact" variant="primary" size="lg">
-                Book My Free Audit
+                Book My Free Outbound Audit
                 <ArrowRight size={18} />
               </CTAButton>
             </motion.div>
